@@ -4,11 +4,8 @@
 
 <p align="center">
 <a href="https://github.com/Jean1dev/nodejs-backend-generic/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Jean1dev/nodejs-backend-generic"></a>
-
 <a href="https://github.com/Jean1dev/nodejs-backend-generic/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/Jean1dev/nodejs-backend-generic"></a>
-
 <a href="https://github.com/Jean1dev/nodejs-backend-generic/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/Jean1dev/nodejs-backend-generic"></a>
-
 <a href="https://github.com/Jean1dev/nodejs-backend-generic/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Jean1dev/nodejs-backend-generic"></a>
 </p>
 backend utilizado em algumas das minhas aplicacoes
