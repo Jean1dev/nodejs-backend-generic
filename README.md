@@ -3,6 +3,7 @@
 </h1>
 
 <p align="center">
+![Node.js CI](https://github.com/Jean1dev/nodejs-backend-generic/workflows/Node.js%20CI/badge.svg)
 <a href="https://github.com/Jean1dev/nodejs-backend-generic/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Jean1dev/nodejs-backend-generic"></a>
 <a href="https://github.com/Jean1dev/nodejs-backend-generic/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/Jean1dev/nodejs-backend-generic"></a>
 <a href="https://github.com/Jean1dev/nodejs-backend-generic/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/Jean1dev/nodejs-backend-generic"></a>
