@@ -50,6 +50,14 @@ const files = [
     {
         name: '08-1-gerar_path_contrato.txt',
         endpoint: 'carga-contrato-completar'
+    },
+    {
+        name: '09-ALTERAR_CONTRATO.txt',
+        endpoint: 'carga-contrato-alterar-contrato'
+    },
+    {
+        name: '10-ALTERAR_COTACAO.txt',
+        endpoint: 'carga-contrato-alterar-corretagem'
     }
 ]
 
