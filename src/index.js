@@ -16,14 +16,28 @@ io.on('connection', socket => {
 })
 
 db()
+
 app.use((req, res, next) => {
     req.io = io
     next()
 })
 
-app.use(cors())
+const corsOptions = {
+    origin: '*',
+    optionSuccessStatus: 200,
+}
+
+app.use(cors(corsOptions))
+
+// app.use(function (req, res, next) {
+//     console.log('set header cors')
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//     next()
+// })
+
 app.use(express.json())
-app.use(express.urlencoded({ extended: true}))
+app.use(express.urlencoded({ extended: true }))
 app.use(morgan('dev'))
 app.use('/files', express.static(path.resolve(__dirname, '..', 'tmp')))
 app.use(require(`./routes`))
