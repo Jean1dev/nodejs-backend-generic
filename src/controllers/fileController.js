@@ -62,6 +62,9 @@ const files = [
 ]
 
 function addLog(...content) {
+    if (!content)
+        return
+
     console.log(...content)
     logs.push(...content)
     logs.push('\n')
@@ -70,7 +73,8 @@ function addLog(...content) {
 function handleAxiosError(error, item) {
     addLog('falha ao enviar o item ', item['PK_LDC'])
     if (error.isAxiosError) {
-        addLog(error.request.path, error.config.data)
+        addLog(error.request.path)
+        addLog(error?.response?.data?.message)
         return {
             status: 500,
             body: error?.response?.data?.message,
