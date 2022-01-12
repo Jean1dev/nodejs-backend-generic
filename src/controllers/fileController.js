@@ -74,7 +74,11 @@ function handleAxiosError(error, item) {
     addLog('falha ao enviar o item ', item['PK_LDC'])
     if (error.isAxiosError) {
         addLog(error.request.path)
-        addLog(error?.response?.data?.message)
+
+        if (error?.response?.data?.message) {
+            addLog(JSON.stringify(error.response.data.message))
+        }
+
         return {
             status: 500,
             body: error?.response?.data?.message,
@@ -93,6 +97,7 @@ async function sendRequestWaitResponse(endpoint, payload) {
     addLog('request to ', endpoint)
     try {
         const response = await http.post(endpoint, payload)
+        addLog('sucesso ao enviar o item ', payload[0]['PK_LDC'])
         return {
             status: response.status,
             body: response.data,
